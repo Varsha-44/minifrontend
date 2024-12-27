@@ -1,0 +1,104 @@
+/* ViewOpportunities.css */
+
+.view-opportunities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.opportunity-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.opportunity-card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.opportunity-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.opportunity-card h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.opportunity-card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.opportunity-card a {
+  font-size: 16px;
+  color: #4c99af;
+  text-decoration: none;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.opportunity-card a:hover {
+  text-decoration: underline;
+}
+
+.opportunity-card .quote {
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-style: italic;
+  color: #4c99af;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Styling for the emojis */
+.opportunity-card span {
+  font-size: 2rem;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .opportunity-cards {
+    justify-content: center;
+  }
+
+  .opportunity-card {
+    width: 90%;
+  }
+}

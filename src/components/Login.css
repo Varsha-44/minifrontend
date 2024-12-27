@@ -1,0 +1,101 @@
+/* Container for the login page */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f7fc;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Styling for the Campus Harmony heading at the top */
+  .login-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50; /* Dark blue-gray */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Styling for the login form */
+  .login-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Title style inside the login form */
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  
+  /* Input field container */
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Input fields style */
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .input-field:focus {
+    border-color: #7a93ae;
+    outline: none;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: #f44336;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  /* Login button styling */
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #00d9ff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Link to the Register page */
+  .signup-link {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .signup-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  

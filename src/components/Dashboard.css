@@ -1,0 +1,115 @@
+/* Dashboard.css */
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.header {
+  position: fixed; /* Make the header fixed at the top */
+  top: 0; /* Align to the top of the page */
+  left: 0; /* Align to the left edge */
+  width: 100%; /* Full width across the page */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #4c99af;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure the header is above other elements */
+}
+
+.dashboard-heading {
+  font-size: 24px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.logout-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  color: white;
+  background-color: #d9534f;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #c9302c;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 100px; /* Add margin to account for fixed header */
+  width: 100%;
+  gap: 50px;
+}
+
+.card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 30px; /* Increased padding */
+  width: 35%; /* Increased card width */
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 20px; /* Slightly increased font size */
+  margin: 10px 0;
+}
+
+.card-description {
+  font-size: 16px; /* Increased font size */
+  color: #666;
+  margin: 10px 0 20px;
+}
+
+.card-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  color: white;
+  background-color: #4c99af;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  background-color: #357b91;
+}
+
+/* Styling for quotations */
+.quote-special {
+  font-size: 1.2rem; /* Increased font size for better visibility */
+  font-weight: bold; /* Bold font */
+  font-style: italic; /* Italic style */
+  color: #0d0d0d; /* Distinct red color */
+  margin-top: 15px;
+  margin-bottom: 20px; /* Space above the button */
+  text-align: center;
+}
+
+.quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #fafbfca9;
+  margin-top: 10px;
+  text-align: center;
+}

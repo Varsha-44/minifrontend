@@ -1,0 +1,169 @@
+/* General styling for complaint dashboard */
+.complaint-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align content to start from top */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* Styling for the main heading */
+.complaint-dashboard h2 {
+  font-size: 24px;
+  color: #4b6e84c1;
+  margin-bottom: 20px;
+  align-self: flex-start; /* Align the heading to the left of the container */
+}
+
+/* Error styling for any error messages */
+.error {
+  color: #4c99af;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Complaint category styling */
+.complaint-category {
+  width: 80%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 30px; /* Increased padding for larger category container */
+}
+
+.complaint-category h3 {
+  font-size: 24px; /* Increased font size for category title */
+  margin-bottom: 15px;
+  color: #4c99af;
+}
+
+/* Complaint list styling */
+.complaint-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased gap between cards */
+  margin-top: 20px;
+}
+
+/* Styling for individual complaint cards */
+.complaint-card {
+  background-color: #f1f9ff;
+  padding: 20px; /* Increased padding inside card */
+  border: 1px solid #d9e8f5;
+  border-radius: 10px; /* Slightly larger border radius */
+  width: 100%; /* Full width within the container */
+  max-width: 500px; /* Increased max width for larger cards */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin: 0 auto; /* Center the cards */
+}
+
+.complaint-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.complaint-card h4 {
+  font-size: 20px; /* Increased font size for card title */
+  color: #4c99af;
+  margin-bottom: 15px;
+}
+
+.complaint-card p {
+  font-size: 18px; /* Increased font size for card content */
+  color: #666;
+}
+
+/* Button group for actions */
+.complaint-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px; /* Increased margin for better spacing */
+  gap: 30px; /* Increased gap between buttons */
+}
+
+/* Styling for action buttons */
+.button-card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 40px; /* Increased padding for larger action buttons */
+  text-align: center;
+  flex: 1;
+  max-width: 350px; /* Increased max-width for larger buttons */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin: 10px;
+}
+
+.button-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.button-card h4 {
+  font-size: 24px; /* Increased font size for button card title */
+  margin-bottom: 20px;
+}
+
+.button-card p {
+  font-size: 18px; /* Increased font size for button card content */
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.button-card .btn {
+  width: 80%;
+  font-size: 18px; /* Increased button font size */
+  padding: 12px; /* Increased button padding */
+}
+
+.view-all-btn {
+  background-color: #4c99af;
+}
+
+.view-all-btn:hover {
+  background-color: #4c99af;
+}
+
+/* Password prompt styling */
+.password-prompt {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+
+.password-prompt h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.password-prompt input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.password-prompt .btn {
+  width: 100px;
+  margin: 5px;
+}
+
+.password-prompt .cancel-btn {
+  background-color: #888;
+}
+
+.password-prompt .cancel-btn:hover {
+  background-color: #666;
+}

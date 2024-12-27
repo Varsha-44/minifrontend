@@ -1,0 +1,106 @@
+/* feedback.css */
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top; /* Align content to the top */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.logout-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Position the "Back" button to the right */
+  padding: 10px 20px;
+}
+
+.logout-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  color: white;
+  background-color: #d9534f;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #c9302c;
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.feedback-category {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px 0;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feedback-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-category h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  font-style: italic; /* Make the quote text italic */
+}
+
+.feedback-category span {
+  font-size: 30px; /* Larger emoji size */
+  margin-left: 10px;
+}
+
+.feedback-category .btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: white;
+  background-color: #4c99af;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.feedback-category .btn:hover {
+  background-color: #357b91;
+}
+
+/* Styling for quotations */
+h3 {
+  font-style: italic; /* Apply italic to the quotes */
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+h3 span {
+  font-size: 2rem; /* Slightly larger for better visibility */
+  margin-left: 10px;
+}
+
+.feedback-category p {
+  font-size: 16px;
+  color: #666;
+  font-style: italic; /* Italicize the paragraph text for the quote */
+  margin-top: 10px;
+}

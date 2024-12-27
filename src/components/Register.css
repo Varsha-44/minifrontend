@@ -1,0 +1,91 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style for the Register Form container */
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Heading for the Register Form */
+  .register-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Style for the error message */
+  .error {
+    color: #ff0000;
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Input fields styling */
+  .register-form input,
+  .register-form select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  /* Focus state for inputs */
+  .register-form input:focus,
+  .register-form select:focus {
+    border-color: #00a6ff;
+    box-shadow: 0 0 8px rgba(0, 166, 255, 0.5);
+  }
+  
+  /* Button styling */
+  .register-form button {
+    padding: 12px 25px;
+    background-color: #00d0ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  /* Button hover effect */
+  .register-form button:hover {
+    background-color: #007bff;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .register-form {
+      padding: 20px;
+      width: 90%;
+    }
+    
+    .register-form h2 {
+      font-size: 1.5rem;
+    }
+    
+    .register-form button {
+      font-size: 1rem;
+    }
+  }
+  
