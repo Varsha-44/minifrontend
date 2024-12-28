@@ -15,7 +15,7 @@ const AddOpportunity = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/api/opportunity/add', {
+      const response = await axios.post('https://mini-backend-varshas-projects-f7a4cec5.vercel.app/api/opportunity/add', {
         role,
         company,
         deadline,
