@@ -18,7 +18,7 @@ function InterviewFeedbackPage() {
   useEffect(() => {
     const fetchFeedbacks = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/interviews");
+        const response = await axios.get("https://mini-backend-varshas-projects-f7a4cec5.vercel.app/api/interviews");
         setFeedbacks(response.data);
       } catch (error) {
         console.error("Error fetching feedbacks:", error);
@@ -35,7 +35,7 @@ function InterviewFeedbackPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/interviews", formData);
+      const response = await axios.post("https://mini-backend-varshas-projects-f7a4cec5.vercel.app/api/interviews", formData);
       setFeedbacks([...feedbacks, response.data.feedback]);
       setFormData({
         studentName: "",
