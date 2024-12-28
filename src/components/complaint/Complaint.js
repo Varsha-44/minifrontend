@@ -17,7 +17,7 @@ const Complaint = () => {
   useEffect(() => {
     const fetchComplaints = async () => {
       try {
-        const url = 'http://localhost:5000/api/complaints';
+        const url = 'https://mini-backend-varshas-projects-f7a4cec5.vercel.app/api/complaints';
         const token = localStorage.getItem('authToken');
 
         const response = await axios.get(url, {
