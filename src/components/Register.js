@@ -14,7 +14,7 @@ const Register = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/api/register', { name, email, password, role });
+      const response = await axios.post('https://mini-backend-varshas-projects-f7a4cec5.vercel.app/api/register', { name, email, password, role });
       navigate('/login'); // Redirect to login page after successful registration
     } catch (err) {
       setError('Error registering user');
