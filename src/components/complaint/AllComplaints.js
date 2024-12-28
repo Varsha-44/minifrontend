@@ -11,7 +11,7 @@ const AllComplaints = () => {
     const fetchComplaints = async () => {
       try {
         const token = localStorage.getItem('authToken'); // Assuming token-based auth
-        const response = await axios.get('http://localhost:5000/api/complaints', {
+        const response = await axios.get('https://mini-backend-varshas-projects-f7a4cec5.vercel.app/api/complaints', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setComplaints(response.data);
@@ -31,7 +31,7 @@ const AllComplaints = () => {
 
     try {
       // Send delete request to the backend
-      const response = await axios.delete(`http://localhost:5000/api/complaints/${id}`, {
+      const response = await axios.delete(`https://mini-backend-varshas-projects-f7a4cec5.vercel.app/api/complaints/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
