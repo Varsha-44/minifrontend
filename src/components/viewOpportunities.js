@@ -10,7 +10,7 @@ const ViewOpportunities = () => {
     // Fetch opportunities within the deadline
     const fetchOpportunities = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/opportunity');
+        const response = await axios.get('https://mini-backend-varshas-projects-f7a4cec5.vercel.app/api/opportunity');
         
         // Filter opportunities within the deadline
         const filteredOpportunities = response.data.filter((opportunity) => {
