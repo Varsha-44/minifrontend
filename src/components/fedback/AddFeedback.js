@@ -15,7 +15,7 @@ const AddFeedback = () => {
   useEffect(() => {
     const fetchFeedback = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/pts');
+        const response = await axios.get('https://mini-backend-varshas-projects-f7a4cec5.vercel.app/api/pts');
         setFeedbackList(response.data);
       } catch (err) {
         console.error('Error fetching feedback:', err.message);
@@ -32,13 +32,13 @@ const AddFeedback = () => {
     }
 
     try {
-      await axios.post('http://localhost:5000/api/pts', { feedback, company, trainingSession });
+      await axios.post('https://mini-backend-varshas-projects-f7a4cec5.vercel.app/api/pts', { feedback, company, trainingSession });
       setMessage('Feedback submitted successfully');
       setFeedback('');
       setCompany('');
       setTrainingSession('');
       setError('');
-      const updatedFeedback = await axios.get('http://localhost:5000/api/pts');
+      const updatedFeedback = await axios.get('https://mini-backend-varshas-projects-f7a4cec5.vercel.app/api/pts');
       setFeedbackList(updatedFeedback.data);
       setTimeout(() => setShowForm(false), 2000);
     } catch (err) {
