@@ -18,7 +18,7 @@ const FeedbackDashboard = () => {
   const [showForm, setShowForm] = useState(false); // Control form visibility
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/exams')
+    fetch('https://mini-backend-varshas-projects-f7a4cec5.vercel.app/api/exams')
       .then((response) => {
         if (!response.ok) {
           throw new Error(`Error fetching feedback: ${response.status}`);
@@ -41,7 +41,7 @@ const FeedbackDashboard = () => {
     e.preventDefault();
     setErrorMessage('');
 
-    fetch('http://localhost:5000/api/exams', {
+    fetch('https://mini-backend-varshas-projects-f7a4cec5.vercel.app/api/exams', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
