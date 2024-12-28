@@ -17,7 +17,7 @@ const Login = () => {
 
     try {
       // Make API call to the backend for login
-      const response = await axios.post('http://localhost:5000/api/login', { email, password });
+      const response = await axios.post('https://mini-backend-varshas-projects-f7a4cec5.vercel.app/api/login', { email, password });
 
       // Store the token in localStorage for authentication
       localStorage.setItem('authToken', response.data.token);
