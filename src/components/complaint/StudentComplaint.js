@@ -34,7 +34,7 @@ const StudentComplaint = () => {
     try {
       // Make POST request
       const response = await axios.post(
-        "http://localhost:5000/api/complaints",
+        "https://mini-backend-varshas-projects-f7a4cec5.vercel.app/api/complaints",
         complaintDetails,
         {
           headers: {
